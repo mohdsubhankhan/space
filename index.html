@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Exploration App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NASA Space Exploration</h1>
+    <p>Explore planets, missions, and stunning space photos!</p>
+  </header>
+
+  <main>
+    <section id="apod">
+      <h2>Astronomy Picture of the Day</h2>
+      <div class="apod-container">
+        <img id="apod-image" alt="Astronomy Picture of the Day">
+        <p id="apod-title"></p>
+        <p id="apod-description"></p>
+      </div>
+    </section>
+
+    <section id="mars-photos">
+      <h2>Mars Rover Photos</h2>
+      <div class="mars-container">
+        <input type="date" id="mars-date" value="2023-01-01">
+        <button id="fetch-mars-photos">Get Mars Photos</button>
+        <div id="mars-gallery"></div>
+      </div>
+    </section>
+
+    <section id="planets">
+      <h2>Planets in the Solar System</h2>
+      <div id="planet-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
